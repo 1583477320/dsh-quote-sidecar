@@ -1,0 +1,58 @@
+{
+  "name": "dsh-quote-sidecar",
+  "version": "0.1.0",
+  "description": "选中回答里的任意一段，在右下角临时小窗里追问：独立于主会话、不写入历史，关闭即丢弃。Ask about a quoted passage in a disposable floating window, without touching the main conversation.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "client-plugin",
+    "quote",
+    "sidecar",
+    "side-chat",
+    "follow-up"
+  ],
+  "license": "MIT",
+  "author": "zhuyuelei",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1583477320/dsh-quote-sidecar.git"
+  },
+  "homepage": "https://github.com/1583477320/dsh-quote-sidecar#readme",
+  "bugs": {
+    "url": "https://github.com/1583477320/dsh-quote-sidecar/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

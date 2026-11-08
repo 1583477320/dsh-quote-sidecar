@@ -1,0 +1,4 @@
+- insert:
+    - id: dsh-quote-sidecar
+      name: 'dsh-quote-sidecar'
+      config: {}
