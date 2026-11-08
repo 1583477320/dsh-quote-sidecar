@@ -1,5 +1,9 @@
 # dsh-quote-sidecar
 
+[![npm version](https://img.shields.io/npm/v/dsh-quote-sidecar.svg)](https://www.npmjs.com/package/dsh-quote-sidecar)
+[![license](https://img.shields.io/npm/l/dsh-quote-sidecar.svg)](./LICENSE)
+[![verify](https://github.com/1583477320/dsh-quote-sidecar/actions/workflows/verify.yml/badge.svg)](https://github.com/1583477320/dsh-quote-sidecar/actions/workflows/verify.yml)
+
 选中主会话里的任意一段话，在右下角开一个**临时小窗**追问。小窗只做问答：不创建 Session、不向主会话追加消息、不写磁盘，关闭即丢弃。
 
 > Select a passage in a DSH answer, ask about it in a disposable floating window. No Session is created, nothing is appended to the main conversation, and closing the window discards everything.
